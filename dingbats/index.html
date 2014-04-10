@@ -3,9 +3,9 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Text Input Activity</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<title>DNA and Mitosis Dingbats</title>
+	<meta name="DNA and Mitosis Dingbats activity" content="">
+	<meta name="Danielle White" content="">
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -15,17 +15,29 @@
 	================================================== -->
 	
 	
+	
 </head>
 <body>
 	
+	<img border="0" src="images/q1.jpg" alt="question1"><br>
+	<input type="text" id="question1"> <br>
+	<button onclick="question1()">Check</button> 
 	
-
 	
-
-
 <!-- js
 	================================================== -->
-	
-	
+<script>
+		function question1() {
+    	var value = document.getElementById("question1").value;
+   		if (value == "adenine") {
+        window.alert("correct!");
+        
+    } else {
+        window.alert("try again");
+    }
+}
+</script>
+
+
 </body>
 </html>
