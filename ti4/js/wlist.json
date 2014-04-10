@@ -1,46 +1,30 @@
 var activityJSON = {
 
 	"info": {
-        "title": "Type the French word to complete the sentence.",
-        "instructions": "This is a gapfill activity. Every time you submit an incorrect answer you will get a time penalty of 10 seconds. The time to beat for a gold medal is ",
-        "questionStimulus": "<p>Cherche Correspondante</br>Je m’appelle Sandrine Aubert et j’habite un appartement avec ma mère Julie et mon père Jacques. J’ai quinze ans, presque seize, et je suis fille unique. Ma mère est institutrice et mon père est ingénieur. Il travaille dans une usine en ville. J’aimerais avoir un chien mais parce que nous habitons un appartement mes parents insistent qu’il y a de la place seulement pour une souris dans l’appartement et une tortue sur le balcon!</p>",
-        "attemptsAllowed" : 2,
-        "numberofQuestions": 7,
-        "Gold":  30,
-        "Silver":  60,
-        "Bronze":  90,
-        "timePenaltyTime": 10,
+        
+        
+        
+        "numberofQuestions": 4
     },
 
 
     "questions": [
         { // Question 1 - Text
-            "q": "Sandrine lives in a flat.",
-            "a": ["flat"]
+            "q": "Sandrine lives in a ad(d)(t)en(p)ine = adenine",
+            "a": ["ad(d)(t)en(p)ine = adenine"]
         },
          { // Question 2 - Text
-            "q": "She is almost sixteen years old.",
-            "a": ["sixteen","16"]
+            "q": "Sandrine lives in a Cytosine",
+            "a": ["Cytosine"]
         },
         { // Question 3 - Text
-            "q": "She is an only child.",
-            "a": ["only child"]
+            "q": "Sandrine lives in a differentiate",
+            "a": ["differentiate"]
         },
         { // Question 4 - Text
-            "q": "Her mother is a primary teacher.",
-            "a": ["primary teacher"]
+            "q": "Sandrine lives in a Triplet Code",
+            "a": ["Triplet Code"]
         },
-        { // Question 5 - Text
-            "q": "Her dad works in a factory.",
-            "a": ["factory"]
-        },
-        { // Question 6 - Text
-            "q": "She isn't allowed a dog.",
-            "a": ["dog"]
-        },
-        { // Question 7 - Text
-            "q": "She has a mouse and a tortoise.",
-            "a": ["mouse"]
-        }
+        
 	]
 }

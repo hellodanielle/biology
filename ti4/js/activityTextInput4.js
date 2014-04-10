@@ -16,12 +16,9 @@
             // Count the number of questions
             var questionCount = questions.length;
 
-            //set variables
-            var timerCtrl;
-            var seconds = 0;
-            var totalTimeTaken;
-            var currentQuestion = 0;
-             var attempted = 1;
+            
+            var currentQuestion = 1;
+         
  
             //Arrays           
             var attemptedArray = [];
@@ -56,10 +53,12 @@
             var incorrectAudio = $("audio")[0];
             var correctAudio = $("audio")[1];
 
-
+			
+			startActivity();
+			
             //set up start page by hiding question elements
-            $("#questionArea").hide();
-            $("#activityIntro").show();
+            $("#questionArea").show();
+            $("#activityIntro").hide();
             $("#nextButton").hide();
             $("#activityInfo").hide();
             $('#resultsArea').hide(); 
@@ -69,53 +68,15 @@
             $("#checkAnswerButton").hide();
 
 
-
+			
             // Activity instructions go here
             $("#title").html(title);
             $("#introductionText").html(instructions + secondsToHms(goldTime) + ".");
 
+			
+            
 
-            //characters
-            var charactersHTML = $('<div></div>');
-
-            var characters = ["à", "â", "ä", "æ", "ç", "é", "è", "ê", "ë", "î", "ï", "ô", "œ", "ù", "û", "ü"];
-
-            for (i in characters) {
-                if (characters.hasOwnProperty(i)) {
-                    character = characters[i],
-                    characterId = character;
-                    var charButton = '<input value="' + character +'" type="button" />';
-                    charactersHTML.append(charButton);
-                }
-            };
-            $("#charactersArea").append(charactersHTML);
-            $("#charactersArea").hide();
-
-            /**
-            * @author joneshy
-            */
-            //shuffle function to shuffle questions or answers 
-            function shuffle(o) {
-                for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-                    return o;
-            };
-
-            //convert seconds to hours minutes seconds
-            function secondsToHms(d) {
-                d = Number(d);
-                var h = Math.floor(d / 3600);
-                var m = Math.floor(d % 3600 / 60);
-                var s = Math.floor(d % 3600 % 60);
-                return ((h > 0 ? h + ":" : "") + (m > 0 ? (h > 0 && m < 10 ? "0" : "") + m + ":" : "00:") + (s < 10 ? "0" : "") + s); 
-            }
-
-            //update the onscreen timer every second
-            function timer() {
-                seconds++;
-                var currentTime = secondsToHms(seconds)
-                $("#timeNumbers").html(currentTime);
-            };
-
+          
 
 
             function setActivity() {
@@ -253,18 +214,7 @@ for (var i = 0; i < value.length; i++){
 
            
             //if incorrect answer is pressed add time penalty
-            function incorrect() {
-                incorrectAudio.load();
-                incorrectAudio.play();
-                //increment attempts
-                attempted++;
-                $("#currentQuestionDisplay").html("Attempt " + attempted + " out of " + attemptsAllowed);
-                if ((attempted - 1) >= attemptsAllowed) {
-                    //load results
-                    results();
-                };
-
-            }
+         
 
             function correct() {
                 correctAudio.load();
