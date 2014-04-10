@@ -1,0 +1,505 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+/* #Activity Styles
+================================================== */
+
+
+/* Common Page Styles
+================================================== */
+
+
+
+#container{
+	margin:0;
+	padding:0;
+	position:absolute !important;
+}
+
+#navigation {
+	background-color:#555460;
+	height:50px;
+	/*background: url(../images/header.jpg) no-repeat 0px;*/
+}
+
+#subheader {
+	background-color:#00B2AD;
+	/*background-color:#E05D2C;
+	background-color:#8B8F29;
+	background-color:#EE519B;*/
+	height:40px;
+	padding-bottom:5px;
+	margin-bottom:0px;
+	
+	/*background: url(../images/header.jpg) no-repeat 0px;*/
+}
+
+#subheader h2{
+	
+	font-size:2em;
+	text-align:center;
+	padding-bottom:0px;
+	margin-bottom:0px
+	
+}
+
+
+
+.arrow-up {
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	width: 0; 
+	height: 0; 
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 40px solid #00B2AD;
+	
+}
+
+
+.arrow_box {
+	position: relative;
+	background: #00B2AD;
+}
+.arrow_box:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #00B2AD;
+	border-width: 40px;
+	margin-left: -40px;
+}
+
+
+footer{
+	font-size:.85em; 
+	color:#F0F; 
+	height:230px;
+	padding:0px 0px 0px 0px; 
+	background-image:url("../images/footer.png"); 
+	background-position:center; background-size:cover;
+	position:fixed;
+	bottom:0;
+	width:100%;
+}
+h1{
+	line-height: 35px;
+	margin-bottom: 0px;
+}
+
+#title {
+	
+	color: #fff;
+}
+
+	/* Start
+	================================================== */
+
+	.body-start {
+		background-image:url("../images/background-mountains-start.jpg");
+
+	}
+	
+	#introductionText{
+		color:#fff;
+		padding:10px;
+		background-color:#00B2AD;
+	}
+	
+
+	
+	/* Activity
+	================================================== */
+
+	.body-activity {
+		background-image:url("../images/bg.jpg");
+	}
+	
+	#activityInfo{
+		
+		
+		padding:0;
+		top:0;
+	}
+
+	#questionStimulus {
+
+		background-color: #fff;
+		border: 1px solid #555460;
+		text-align: left;
+		padding:10px;
+		font-size: 16px;
+	}
+	
+	#timeNumbers {
+		font-family: Courier, monospace;
+		color: #fff;
+		font-size:21px;
+		margin-top: 10px;
+	}
+
+	#timeCounter h5 {
+		color:#fff;
+	}
+
+	#timeCounter, #currentQuestionDisplay {
+		padding:5px;
+		color: #ffffff;
+		background-color:#555460;
+		height:55px; 
+		width: 100%;  
+		position:relative;
+		
+	}
+
+
+
+	#timeCounter:after,
+	#timeCounter:before,
+	#currentQuestionDisplay:after,
+	#currentQuestionDisplay:before
+	{
+		border-top: 15px solid #555460 ;
+		content: '';
+		height: 0;
+		position: absolute;
+		top: 100%;
+		width: 0;
+	}
+	#timeCounter:after,
+	#currentQuestionDisplay:after
+	{
+		border-left: 65px solid transparent;
+		right: 0px;
+	}
+	#timeCounter:before,
+	#currentQuestionDisplay:before {
+		border-right: 65px solid transparent;
+		left: 0px;
+	}
+
+
+	#startButton{
+		margin-top:60px;
+	}
+
+
+	#question {
+		background-color: #00B2AD ;
+		color: #fff;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	#question h4 {
+		text-align: left;
+		color: #fff;
+		padding-left:10px;
+	}
+	.correctstyle {
+		background-color: #58CC00;
+		
+	}
+
+	
+
+	.incorrectstyle {
+		background-color: #F75959;
+		
+
+	}
+
+
+	input[type=text], input[type=text]:focus { 
+		
+		
+		background-color: #AAE6E4;  
+		border-style: dashed;  
+		border-width: 0px 0px 2px 0px;  
+		border-color: #FFF; 
+		outline:0; 
+	} 
+
+	
+	
+	/* Results
+	================================================== */
+
+	.body-results {
+		background-image:url("../images/background-mountains-start.jpg");
+	}
+
+
+	#resultsArea {	
+		color: #fff;
+		position:relative;
+		
+	}
+
+	#resultsText {
+		margin-top:-158px;
+		padding-top:170px;
+		padding-bottom:20px;
+		background: #00B2AD;
+		font-size:16px;
+		
+		
+	}
+
+	#resultsMedal {
+		color: #fff;	
+		position: absolute;	
+		z-index:110;
+		margin-top: 147px;
+		width:340px;
+		text-align: center;	
+		
+	}
+
+	#resultsStar {
+		width: 267px;
+		height: 277px;
+		position: relative;	
+		z-index:100;
+		margin-left: auto;
+		margin-right: auto;
+		
+
+	}
+		#resultsFeedback {
+		display: none;
+		text-align: left;
+		color: #fff;
+		background-color: #555460;
+
+	}
+
+	
+	#resultsFeedback table{
+		border-collapse: collapse;
+		border-spacing: 0;
+		width:100%;
+		height:100%;
+		margin:0px;padding:0px;
+	}
+	#resultsFeedback th {
+		background-color:#555460;
+		padding:7px;
+		border: 1px solid #ffffff;
+	}
+	#resultsFeedback td{
+		vertical-align:middle;
+		background-color:#00b2ad;
+		border:1px solid #ffffff;
+		border-width:0px 1px 1px 0px;
+		text-align:left;
+		padding:7px;
+		color:#ffffff;
+	}
+
+	#resultsFeedback tr th:last-child td{
+		border-width:0px 1px 0px 0px;
+	}
+	#resultsFeedback tr td th:last-child{
+		border-width:0px 0px 1px 0px;
+	}
+	#resultsFeedback tr th:last-child td th:last-child{
+		border-width:0px 0px 0px 0px;
+	}
+	#resultsFeedback tr th:first-child td th{
+
+		background-color:#555460;
+		border:0px solid #ffffff;
+		text-align:center;
+		border-width:0px 0px 1px 1px;
+		font-size:21px;
+		font-family:Arial;
+		font-weight:bold;
+		color:#ffffff;
+	}
+	.resultsFeedback tr th:first-child td th:first-child{
+		border-width:0px 0px 1px 0px;
+	}
+	.resultsFeedback tr th:first-child td th:last-child{
+		border-width:0px 0px 1px 1px;
+	}
+
+
+	.Gold {
+		background-image: url(../images/medal-gold.svg);
+
+
+	}
+
+	.Silver {
+		background-image: url(../images/medal-silver.svg);
+
+		
+	}
+
+	.Bronze {
+		background-image: url(../images/medal-bronze.svg);
+
+		
+	}
+
+
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	#resultsMedal {
+		width:265px;
+	}
+	
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	
+	
+		/* Common Page Styles
+		================================================== */
+		#navigation {
+			background-color:#555460;
+			height:50px;
+			/*background: url(../images/header.jpg) no-repeat 0px;*/
+		}
+
+		#subheader {
+			background-color:#00B2AD;
+	/*background-color:#E05D2C;
+	background-color:#8B8F29;
+	background-color:#EE519B;*/
+	height:40px;
+	padding-bottom:0px;
+	
+	/*background: url(../images/header.jpg) no-repeat 0px;*/
+}
+
+#subheader h2{
+	font-size:inherit;
+}
+
+
+
+/* Start
+================================================== */
+
+#introductionText{
+	color:#fff;
+	padding:10px;
+	background-color:#00B2AD;
+	font-size:inherit;
+}
+
+/* Activity
+================================================== */
+#timeCounter, #currentQuestionDisplay {
+	color: #ffffff;
+	background-color: #555460 ;
+	height:100%;
+	top:60px;
+	padding:0px;
+	
+}
+
+#currentQuestionDisplay {
+	
+	top:80px;
+	
+}
+
+#timeCounter:after,
+#timeCounter:before,
+#currentQuestionDisplay:after,
+#currentQuestionDisplay:before
+{
+	border-top: 0;    
+	height: 0;    
+	top: 100%;
+	width: 0;
+	
+}
+
+
+
+#questionArea{
+	
+	position:relative;
+	top:80px;
+}
+
+
+
+
+
+	/* Results
+	================================================== */
+	#resultsMedal {
+		width:100%;
+		
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
